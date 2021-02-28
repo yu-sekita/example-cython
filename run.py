@@ -17,5 +17,5 @@ if __name__ == '__main__':
     loop = 5
     result1 = timeit.timeit('judge_prime_number(number)', globals=globals(), number=loop)
     result2 = timeit.timeit('c_judge_prime_number(number)', globals=globals(), number=loop)
-    print('result1:', result1 / loop)
-    print('result2:', result2 / loop)
+    print('using Python:', result1 / loop)
+    print('using C     :', result2 / loop)
