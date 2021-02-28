@@ -5,7 +5,7 @@ bool c_judge_prime_number(long number) {
     long end;
     end = (long)sqrt(number) + 1;
     for (long n = 2; n <= end; n++) {
-        if (number % n) {
+        if (number % n == 0) {
             return false;
         }
     }
